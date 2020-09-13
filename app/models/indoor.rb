@@ -1,2 +1,5 @@
 class Indoor < ApplicationRecord
 end
+
+
+
