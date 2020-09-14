@@ -7,21 +7,21 @@ class IndoorsController < ApplicationController
   end
 
   def new
-    @indoors = Indoor.new
+    @indoor = Indoor.new
   end
 
   def create
-    @item = Item.new(item_params)
-    if @item.save
+    @indoor = Indoor.new(indoor_params)
+    if @indoor.save
      redirect_to root_path
     else
      render :new
     end
-    @items = Item.all
+    @indoors = Indoor.all
   end
 
   def destroy
-    if @item.destroy
+    if @indoor.destroy
     redirect_to root_path
     else
     render :edit
@@ -31,7 +31,7 @@ class IndoorsController < ApplicationController
   
 
   def update
-   if @item.update(item_params)
+   if @indoor.update(indoor_params)
     redirect_to item_path
     else
     render :edit
@@ -46,12 +46,12 @@ class IndoorsController < ApplicationController
 
   private
 
-  def set_item
-    @item = Item.find(params[:id])
+  def set_indoor
+    @indoor = Indoor.find(params[:id])
   end
 
-  def item_params
-    params.require(:item).permit( :image, :product_name, :product_description, :product_category_id, :product_status_id, :burden_id, :area_id, :days_id, :selling_prise, :item_id).merge(user_id: current_user.id)
+  def indoor_params
+    params.require(:indoor).permit( :image, :indoor_name , :indoor_text, :indoor_id).merge(user_id: current_user.id)
   end
 
   
