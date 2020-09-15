@@ -666,7 +666,7 @@ a {
 }
 
 a:hover {
-  color: greenyellow;
+  color:black;
 }
 
 .bold {
@@ -718,7 +718,7 @@ header.header div.header__bar.row div.grid-6 a.post {
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
   border-color:green;
-  color:greenyellow;
+  color:black;
 }
 
 .title {
@@ -738,7 +738,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 header.header {
   padding: 10px;
   border-bottom: 1px solid #D8D8D8;
-  background-color: #fff;
+  background-color:greenyellow;
   position: fixed;
   top: 0;
   left: 0;
@@ -1172,3 +1172,46 @@ footer p {
   font-size: 2vh;
 }
 
+.item-show {
+  background-color: #f8f8f8;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+.item-box {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 1200px;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-box-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: rgb(205, 202, 202);
+  object-fit: contain;
+}
+.item-box>.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.item-price-box>.item-price {
+  text-align: center;
+  font-size: 3vh;
+  font-weight: bold;
+}
+.item-destroy {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin: 10px 0px;
+  padding: 1vh 3vw;
+}
