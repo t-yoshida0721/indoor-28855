@@ -738,7 +738,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 header.header {
   padding: 10px;
   border-bottom: 1px solid #D8D8D8;
-  background-color:greenyellow;
+  background-color:blanchedalmond;
   position: fixed;
   top: 0;
   left: 0;
@@ -1195,11 +1195,12 @@ footer p {
   min-height: 500px;
   background-color: rgb(205, 202, 202);
   object-fit: contain;
+  border: 1px solid gray;
 }
 .item-box>.name {
   text-align: center;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .item-price-box>.item-price {
@@ -1207,6 +1208,29 @@ footer p {
   font-size: 3vh;
   font-weight: bold;
 }
+
+.comment-text {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  border: solid 1px grey;
+  resize: none;
+
+}
+
+.comment-btn {
+  line-height: 48px;
+  background-color: white;
+  border: 1px solid gray;
+  color: grey;
+  width: 50%;
+  min-width: 150px;
+  font-size: 18px;
+  border-radius: 100px;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
 .item-destroy {
   background-color: lightgray;
   text-align: center;
@@ -1214,4 +1238,5 @@ footer p {
   color: black;
   margin: 10px 0px;
   padding: 1vh 3vw;
+  border-radius: 100px;
 }
