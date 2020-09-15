@@ -1,0 +1,32 @@
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+      <%= @indoor.indoor_name %>
+    </h2>
+    <div class='item-img-content'>
+      <%= image_tag @indoor.image,class:"item-box-img" %>
+      
+      
+      
+    </div>
+    <div class="item-price-box">
+      <span class="item-price">
+        <%= @indoor.indoor_text %>
+      </span>
+     
+    </div>
+<div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        indoorに応援のコメントをしよう！
+        <br>
+        不快な言葉遣い、誹謗中傷は利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <span>コメントする<span>
+      </button>
+    </form>
+  </div>
+  <%= link_to '削除', indoor_path(@indoor), method: :delete, class:'item-destroy' %>
