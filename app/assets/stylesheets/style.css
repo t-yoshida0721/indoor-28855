@@ -738,7 +738,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 header.header {
   padding: 10px;
   border-bottom: 1px solid #D8D8D8;
-  background-color:blanchedalmond;
+  background-color:greenyellow;
   position: fixed;
   top: 0;
   left: 0;
@@ -994,7 +994,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-color: gray;
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -1002,7 +1002,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: greenyellow;
 }
 
 .container {
@@ -1239,4 +1239,8 @@ footer p {
   margin: 10px 0px;
   padding: 1vh 3vw;
   border-radius: 100px;
+}
+.message-user-nickname {
+  color:blueviolet;
+
 }

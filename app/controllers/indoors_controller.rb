@@ -38,11 +38,11 @@ class IndoorsController < ApplicationController
     end
   end
 
-  # def show
-  #    if @item.bid != nil
-  #     @Item = Bid.find (params[:id])
-  #    end
-  # end
+  def show
+    @indoor = Indoor.find(params[:id])
+    @message = Message.new
+    @messages = @indoor.messages.includes(:user)
+  end
 
   private
 

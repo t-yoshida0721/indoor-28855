@@ -11,23 +11,37 @@
       <span class="item-price">
         <%= @indoor.indoor_text %>
       </span>
-     </div>
+</div>
     
 <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
+ <% if current_user %>
+    <%= form_with model: [@indoor, @message],  local: true do |f| %>
+      <%= f.text_area :text, class:"comment-text"%>
       <p class="comment-warn">
         indoorに応援のコメントをしよう！
         <br>
         不快な言葉遣い、誹謗中傷は利用制限や退会処分となることがあります。
       </p>
-      <button type="submit" class="comment-btn">
+      <%= f.submit "コメントする",class:"comment-btn",id:"input" %>
         <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <span>コメントする<span>
-      </button>
-    </form>
+      
+    
+    <% end %>
+  <% end %> 
   </div>
+  <div class="comments">
+      <h4>＜コメント一覧＞</h4>
+      <% if @messages %>
+      <>
+        <% @messages.each do |message| %>
+          <p>
+            <strong class="message-user-nickname"><%=  message.user.nickname %>：</strong>
+            <%= message.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+  
   <% if user_signed_in? && current_user.id == @indoor.user_id %>
   <%= link_to '削除', indoor_path(@indoor), method: :delete, class:'item-destroy' %>
   <%end%>
-  </div>
