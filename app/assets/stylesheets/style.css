@@ -1027,7 +1027,7 @@ form input[type="submit"]:hover {
 }
 
 .comments a {
-  color: #57C3E9;
+  color: black;
 }
 
 .comments a:hover {
@@ -1243,4 +1243,15 @@ footer p {
 .message-user-nickname {
   color:blueviolet;
 
+}
+.error-alert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.error-message {
+  font-size: 1.3vw;
+  list-style: circle;
+  color: rgb(182, 48, 0);
 }
