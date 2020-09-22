@@ -32,6 +32,11 @@ Things you may want to cover:
 | email    | string | null: false |
 | password | string | null: false |
 
+### Association
+
+- has_many :indoors
+- has_many :messages
+
 ## indoors テーブル
 
 | Column      | Type       | Options                        |
@@ -41,6 +46,11 @@ Things you may want to cover:
 | indoor_text | string     | null: false                    |
 | user        | references | null: false, foreign_key: true |
 
+### Association
+
+- belongs_to :user
+- has_many :messages
+
 # messages テーブル
 
 | Column  | Type       | Options                        |
@@ -48,3 +58,8 @@ Things you may want to cover:
 | text    | string     |                                |
 | user    | references | null: false, foreign_key: true |
 | indoor  | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :indoor
+- belongs_to :user
