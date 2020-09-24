@@ -60,3 +60,5 @@ group :production do
   gem 'rails_12factor'
 end
 gem "aws-sdk-s3", require: false
+gem 'rspec-rails', '~> 4.0.0'
+gem 'factory_bot_rails'
