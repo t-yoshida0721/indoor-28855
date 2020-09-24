@@ -3,7 +3,11 @@
 
 
 # **アプリケーション名**
-## *<span style="color: red; ">"indoor"</span>*
+## *"indoor"* 
+
+# **制作意図**
+
+
 
 Things you may want to cover:
 
