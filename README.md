@@ -3,7 +3,7 @@
 
 
 # **アプリケーション名**
-## *<font color="green">"indoor"</font>*
+## *<span style="color: red; ">"indoor"</span>*
 
 Things you may want to cover:
 
