@@ -3,7 +3,7 @@
 
 
 # アプリ名  
-  "indoor"
+## "indoor"
 
 Things you may want to cover:
 
