@@ -1,10 +1,12 @@
 <div class="contents row">
   <div class="container">
     <%= form_with(model: @indoor, local: true) do |form| %>
+
       <h3>投稿する</h3>
+      <%= render 'shared/error_messages', model: form.object %>
       <%= form.text_field :indoor_name, placeholder: "タイトル" %>
       <%= form.file_field :image, placeholder: "画像を添付" %>
-      <%= form.text_area :indoor_text, placeholder: "紹介文", rows: "10" %>
+      <%= form.text_area :indoor_text, placeholder: "説明文", rows: "10" %>
       <%= form.submit "送信" %>
     <% end %>
   </div>
