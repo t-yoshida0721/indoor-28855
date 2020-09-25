@@ -32,7 +32,7 @@
 # **今後の実装方針**
 ### さらなるコミュニケーションの活性化のため、いいね機能の実装を考えています 
 
-# **開発環境
+# **開発環境**
 ### Ruby/Ruby on Rails/JavaScript/MySQL/Github/AWS/Visual Studio Code
 
 
