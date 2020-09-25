@@ -1,11 +1,11 @@
 # README
 ![トップページ](https://github.com/t-yoshida0721/indoor-28855/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-24%2018.05.00.png)    
 
-
+<span style="color: red; ">あああ</span>
 # **アプリケーション名**
 - ## *"indoor"* 
 
-# <span style="color: red; ">**概要**</span>
+# **概要**
 
 - ### 自宅での過ごし方＝『indoor』を投稿できる掲示板です。  
   ### 画像付きでindoorを投稿してそれに対してユーザー同士がコメントでのコミュニケーションが可能です。
