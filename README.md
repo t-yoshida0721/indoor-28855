@@ -16,8 +16,8 @@
 
 # **環境**
 ### [こちらからご覧頂けます](https://indoor-28855.herokuapp.com/) （デプロイ先：Heroku）  
-#### Basic認証　ユーザー名：tatsuhiko　パスワード：0721
-#### テストアカウント　メールアドレス：aaa＠aaa　パスワード：ty0721
+#### Basic認証　　　 ユーザー名：tatsuhiko　パスワード：0721
+#### テストアカウント　　メールアドレス：aaa＠aaa　パスワード：ty0721
 
 
 * Ruby version
