@@ -15,7 +15,8 @@
 ### 『室内での過ごし方』を共有することによって安心に変わる事を意図としています。
 
 # **環境**
-### [こちらからご覧頂けます](https://indoor-28855.herokuapp.com/) （デプロイ先：Heroku）
+### [こちらからご覧頂けます](https://indoor-28855.herokuapp.com/) （デプロイ先：Heroku）  
+#### Basic認証　ユーザー名：tatsuhiko パスワード：0721
 
 
 * Ruby version
