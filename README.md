@@ -15,7 +15,7 @@
 ### 『室内での過ごし方』を共有することによって安心に変わる事を意図としています。
 
 # **環境**
-### [こちらからご覧頂けます](https://indoor-28855.herokuapp.com/)
+### [こちらからご覧頂けます](https://indoor-28855.herokuapp.com/) （デプロイ先：Heroku）
 
 
 * Ruby version
