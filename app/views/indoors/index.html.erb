@@ -6,7 +6,7 @@
     <ul class='item-lists'>
       
       <% @indoors.each do |indoor| %>
-      <li class='list'>
+       <li class='list'>
         <%= link_to indoor_path(indoor.id),method: :get do %>
         <div class='item-image-content'>
           <%= image_tag indoor.image, class: "indoor-image" if indoor.image.attached? %>
@@ -17,11 +17,9 @@
           </h3>
           <div class='item-price'>
             <span><%= indoor.indoor_text %></span>
-            <div class='star-btn'>   
-            </div>
           </div>
         </div>
-        </li>
+       </li>
         <% end %>
       <%end%>
-  </div>
+ </div>
